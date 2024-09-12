@@ -1,0 +1,24 @@
+.custom-title {
+    font-weight: bold; /* Letras más gruesas */
+    color: #FFA500;
+    text-align: center; /* Centrado del texto */
+    width: 100%; /* Asegura que el texto esté centrado completamente */
+  }
+  
+
+.footer-buttons {
+    display: flex;
+    justify-content: space-around; /* Espacia uniformemente los botones */
+    width: 100%;
+  }
+  
+  .social-icon {
+    font-size: 2rem; 
+    color: #3b3b3b;
+    transition: transform 0.2s;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.2); /* Efecto de agrandamiento al pasar el cursor */
+  }
+  

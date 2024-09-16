@@ -4,7 +4,11 @@
     text-align: center; /* Centrado del texto */
     width: 100%; /* Asegura que el texto esté centrado completamente */
   }
-  
+ 
+.centered-title {
+    text-align: center;
+    width: 100%;
+}
 
 .footer-buttons {
     display: flex;
@@ -21,9 +25,3 @@
   .social-icon:hover {
     transform: scale(1.2); /* Efecto de agrandamiento al pasar el cursor */
   }
-  
-  .button-group {
-    display: flex;
-    justify-content: space-between; /* Para separar los botones */
-  }
-  

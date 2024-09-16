@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="custom-title" style="text-align: center;">Contactanos</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/login"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="centered-title">Solicitud de Libro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form (submit)="submitForm()">
+    
+    <!-- Campo para el nombre de contacto -->
+    <ion-item>
+      <ion-label position="floating">Nombre de Contacto</ion-label>
+      <ion-input [(ngModel)]="contactName" name="contactName" type="text" required></ion-input>
+    </ion-item>
+    
+    <!-- Campo para el email -->
+    <ion-item>
+      <ion-label position="floating">Correo Electrónico</ion-label>
+      <ion-input [(ngModel)]="email" name="email" type="email" required></ion-input>
+    </ion-item>
+
+    <!-- Campo para el teléfono -->
+    <ion-item>
+      <ion-label position="floating">Teléfono</ion-label>
+      <ion-input [(ngModel)]="phone" name="phone" type="tel" required></ion-input>
+    </ion-item>
+
+    <!-- Campo para la consulta del libro -->
+    <ion-item>
+      <ion-label position="floating">Consulta</ion-label>
+      <ion-textarea [(ngModel)]="query" name="query" required></ion-textarea>
+    </ion-item>
+    
+    <!-- Botón de envío -->
+    <ion-button expand="block" type="submit" color="primary">Enviar Solicitud</ion-button>
+    
+  </form>
+</ion-content>
+
+
+<!-- Barra de progreso -->
+<ion-progress-bar type="indeterminate" color="success"></ion-progress-bar>
+
+<!-- Footer -->
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons slot="start" class="footer-buttons">
+      <ion-button href="https://www.instagram.com" target="_blank">
+        <ion-icon slot="icon-only" name="logo-instagram" class="social-icon"></ion-icon>
+      </ion-button>
+      <ion-button href="https://www.twitter.com" target="_blank">
+        <ion-icon slot="icon-only" name="logo-twitter" class="social-icon"></ion-icon>
+      </ion-button>
+      <ion-button href="https://www.tiktok.com" target="_blank">
+        <ion-icon slot="icon-only" name="logo-tiktok" class="social-icon"></ion-icon>
+      </ion-button>
+      <ion-button href="https://www.facebook.com" target="_blank">
+        <ion-icon slot="icon-only" name="logo-facebook" class="social-icon"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
+

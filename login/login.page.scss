@@ -27,3 +27,34 @@
     justify-content: space-between; /* Para separar los botones */
   }
   
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  ion-card {
+    width: 100%; /* Ancho completo en pantallas pequeñas */
+    max-width: 360px; /* Ancho máximo de las tarjetas */
+    margin: 8px; /* Margen alrededor de las tarjetas */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Para que la imagen no se desborde */
+  }
+  
+  ion-card img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del card */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+  
+  @media (min-width: 600px) {
+    ion-card {
+      width: calc(50% - 16px); /* Ancho del 50% en pantallas medianas */
+    }
+  }
+  
+  @media (min-width: 900px) {
+    ion-card {
+      width: calc(33.333% - 16px); /* Ancho del 33.333% en pantallas grandes */
+    }
+  }
+  

@@ -6,10 +6,24 @@
 
 <ion-content [fullscreen]="true" class="ion-padding">
   <div class="button-group">
-    <ion-button color="tertiary" routerLink="/book">Categorías</ion-button>
-    <ion-button color="tertiary" routerLink="/contact">Contacto</ion-button>
-    <ion-button color="tertiary" routerLink="/other">Aún no sé</ion-button>
+    <ion-button color="dark" routerLink="/book">Categorías</ion-button>
+    <ion-button color="dark" routerLink="/contact">Contacto</ion-button>
+    <ion-button color="dark" routerLink="/other">Aún no sé</ion-button>
   </div>
+
+  <br>
+
+  <ion-toolbar color="secondary">
+    <ion-title>
+      TOP 5 LO MÁS VENDIDO
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="heart-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  
 
     <div class="card-container">
       <ion-card>

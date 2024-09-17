@@ -1,19 +1,21 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title class="custom-title">Solicitud de Libro</ion-title>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/login"></ion-back-button>
+      <ion-button routerLink="/login" fill="clear">
+        <ion-icon name="arrow-back" class="large-icon"></ion-icon>
+      </ion-button>
     </ion-buttons>
+    <ion-title class="custom-title">Solicitud de Libros</ion-title>
   </ion-toolbar>
 </ion-header>
 
-  <ion-card>
-    <img alt="Descripción de la imagen" src="https://www.ultraimagehub.com/wallpapers/tr:flp-false,gx-0.7,gy-1,q-75,rh-3264,rw-5824,th-1080,tw-1920/1272561573369483305.jpeg" />
-  </ion-card>
+<ion-card>
+  <img alt="Descripción de la imagen" src="https://www.ultraimagehub.com/wallpapers/tr:flp-false,gx-0.7,gy-1,q-75,rh-3264,rw-5824,th-1080,tw-1920/1272561573369483305.jpeg" />
+</ion-card>
 
+<!-- Contenido del formulario -->
 <ion-content class="ion-padding">
   <form (submit)="submitForm()">
-    
     <ion-item>
       <ion-label position="floating">Nombre de Contacto</ion-label>
       <ion-input [(ngModel)]="contactName" name="contactName" type="text" required></ion-input>
@@ -35,12 +37,9 @@
     </ion-item>
     
     <ion-button expand="block" type="submit" color="secondary">Enviar Solicitud</ion-button>
-    
   </form>
 </ion-content>
 
-
-<!-- Barra de progreso -->
 <ion-progress-bar type="indeterminate" color="success"></ion-progress-bar>
 
 <!-- Footer -->
@@ -62,4 +61,3 @@
     </ion-buttons>
   </ion-toolbar>
 </ion-footer>
-

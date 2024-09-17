@@ -1,9 +1,22 @@
 .custom-title {
-    font-weight: bold; /* Letras más gruesas */
-    color: #FFA500;
-    text-align: center; /* Centrado del texto */
-    width: 100%; /* Asegura que el texto esté centrado completamente */
-  }
+  text-align: center; /* Centra el texto */
+  flex: 1; /* Ocupa el espacio restante en el toolbar */
+  font-weight: bold; /* Letras más gruesas, opcional */
+  color: #FFA500; /* Color personalizado, opcional */
+}
+
+ion-toolbar {
+  display: flex;
+  align-items: center; 
+}
+
+ion-buttons[slot="start"] {
+  margin-right: auto; 
+}
+
+.large-icon {
+  font-size: 32px; /* Tamaño del ícono, ajusta según sea necesario */
+} 
   
 .footer-buttons {
     display: flex;

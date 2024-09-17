@@ -1,5 +1,10 @@
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/home" fill="clear">
+        <ion-icon name="arrow-back" class="large-icon"></ion-icon>
+      </ion-button>
+    </ion-buttons>
     <ion-title class="custom-title">Bienvenido {{diccionario.user}}</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -8,7 +13,6 @@
   <div class="button-group">
     <ion-button color="dark" routerLink="/book">Categorías</ion-button>
     <ion-button color="dark" routerLink="/contact">Contacto</ion-button>
-    <ion-button color="dark" routerLink="/other">Aún no sé</ion-button>
   </div>
 
   <br>
@@ -19,7 +23,7 @@
     </ion-title>
     <ion-buttons slot="end">
       <ion-button>
-        <ion-icon name="heart-circle-outline"></ion-icon>
+        <ion-icon name="heart"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>

@@ -1,27 +1,40 @@
 .custom-title {
-    font-weight: bold; /* Letras más gruesas */
-    color: #FFA500;
-    text-align: center; /* Centrado del texto */
-    width: 100%; /* Asegura que el texto esté centrado completamente */
-  }
- 
+  text-align: center; /* Centra el texto */
+  flex: 1; /* Ocupa el espacio restante en el toolbar */
+  font-weight: bold; /* Letras más gruesas */
+  color: #FFA500; /* Color personalizado */
+}
+
+ion-toolbar {
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos dentro del toolbar */
+}
+
+ion-buttons[slot="start"] {
+  margin-right: auto; /* Empuja el ícono a la izquierda */
+}
+
+.large-icon {
+  font-size: 32px; /* Tamaño del ícono, ajusta según sea necesario */
+}
+
 .centered-title {
-    text-align: center;
-    width: 100%;
+  text-align: center;
+  width: 100%;
 }
 
 .footer-buttons {
-    display: flex;
-    justify-content: space-around; /* Espacia uniformemente los botones */
-    width: 100%;
-  }
-  
-  .social-icon {
-    font-size: 2rem; 
-    color: #3b3b3b;
-    transition: transform 0.2s;
-  }
-  
-  .social-icon:hover {
-    transform: scale(1.2); /* Efecto de agrandamiento al pasar el cursor */
-  }
+  display: flex;
+  justify-content: space-around; /* Espacia uniformemente los botones */
+  width: 100%;
+}
+
+.social-icon {
+  font-size: 2rem; /* Tamaño del ícono social */
+  color: #3b3b3b; /* Color del ícono social */
+  transition: transform 0.2s;
+}
+
+.social-icon:hover {
+  transform: scale(1.2); /* Efecto de agrandamiento al pasar el cursor */
+}

@@ -42,15 +42,13 @@ ion-buttons[slot="start"] {
   .card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 16px; /* Ajusta el espacio entre tarjetas */
+    justify-content: center;
   }
   
   ion-card {
-    width: 100%; /* Ancho completo en pantallas pequeñas */
-    max-width: 360px; /* Ancho máximo de las tarjetas */
-    margin: 8px; /* Margen alrededor de las tarjetas */
-    border-radius: 8px; /* Bordes redondeados */
-    overflow: hidden; /* Para que la imagen no se desborde */
+    flex: 1 1 calc(50% - 16px); /* Controla el ancho de cada tarjeta */
+    max-width: 360px;
   }
   
   ion-card img {
